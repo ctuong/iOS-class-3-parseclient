@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import <Parse/Parse.h>
+#import "ChatViewController.h"
 
 @interface LoginViewController ()
 
@@ -32,6 +33,10 @@
     [PFUser logInWithUsernameInBackground:self.emailField.text password:self.passwordField.text block:^(PFUser *user, NSError *error) {
         if (user) {
             // redirect to chat
+            ChatViewController *cvc = [[ChatViewController alloc] init];
+            [self presentViewController:cvc animated:YES completion:nil];
+            
+//            [self performSegueWithIdentifier:@"chatViewSegue" sender:self];
         } else {
             NSLog(@"%@", error);
             NSString *errorString = [error userInfo][@"error"];
@@ -48,8 +53,12 @@
     user.email = self.emailField.text;
     
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (!error) {
+        if (succeeded) {
             // redirect to chat
+            ChatViewController *cvc = [[ChatViewController alloc] init];
+            [self presentViewController:cvc animated:YES completion:nil];
+            
+//            [self performSegueWithIdentifier:@"chatViewSegue" sender:self];
         } else {
             NSLog(@"%@", error);
             NSString *errorString = [error userInfo][@"error"];

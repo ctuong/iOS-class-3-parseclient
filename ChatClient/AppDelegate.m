@@ -24,7 +24,7 @@
     [Parse setApplicationId:@"DXsvTSLgsKT03gSSqy6V5KbLwVpgfEjmEsKzzQUP" clientKey:@"BXAzmCJhMtIVWhLVEiKIMzPCA5XI0Nt9NwvAOPVd"];
     
     self.window.rootViewController = [[LoginViewController alloc] init];
-        
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

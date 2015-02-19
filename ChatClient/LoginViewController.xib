@@ -42,7 +42,7 @@
                         <constraint firstAttribute="height" constant="30" id="rqT-lr-IXK"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wj1-UL-eta">
                     <rect key="frame" x="102" y="109" width="210" height="30"/>
@@ -96,7 +96,7 @@
                 <constraint firstItem="leH-Of-YgY" firstAttribute="top" secondItem="Ab5-Ld-66V" secondAttribute="bottom" constant="8" id="y1h-IA-Thd"/>
                 <constraint firstItem="dxi-jK-u4e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="y96-3x-MTq"/>
             </constraints>
-            <point key="canvasLocation" x="433" y="376"/>
+            <point key="canvasLocation" x="303" y="361"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

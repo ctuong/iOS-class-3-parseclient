@@ -17,6 +17,8 @@
 		EBD41E601A968B6F0002BDA1 /* ChatClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD41E5F1A968B6F0002BDA1 /* ChatClientTests.m */; };
 		EBD41E6C1A968D190002BDA1 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD41E6A1A968D190002BDA1 /* LoginViewController.m */; };
 		EBD41E6D1A968D190002BDA1 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD41E6B1A968D190002BDA1 /* LoginViewController.xib */; };
+		EBD41E721A96913C0002BDA1 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD41E701A96913C0002BDA1 /* ChatViewController.m */; };
+		EBD41E731A96913C0002BDA1 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD41E711A96913C0002BDA1 /* ChatViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		EBD41E691A968D190002BDA1 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		EBD41E6A1A968D190002BDA1 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		EBD41E6B1A968D190002BDA1 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		EBD41E6F1A96913C0002BDA1 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		EBD41E701A96913C0002BDA1 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		EBD41E711A96913C0002BDA1 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +152,9 @@
 				EBD41E691A968D190002BDA1 /* LoginViewController.h */,
 				EBD41E6A1A968D190002BDA1 /* LoginViewController.m */,
 				EBD41E6B1A968D190002BDA1 /* LoginViewController.xib */,
+				EBD41E6F1A96913C0002BDA1 /* ChatViewController.h */,
+				EBD41E701A96913C0002BDA1 /* ChatViewController.m */,
+				EBD41E711A96913C0002BDA1 /* ChatViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -244,6 +252,7 @@
 				EBD41E6D1A968D190002BDA1 /* LoginViewController.xib in Resources */,
 				EBD41E4F1A968B6F0002BDA1 /* Main.storyboard in Resources */,
 				EBD41E541A968B6F0002BDA1 /* LaunchScreen.xib in Resources */,
+				EBD41E731A96913C0002BDA1 /* ChatViewController.xib in Resources */,
 				EBD41E511A968B6F0002BDA1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +306,7 @@
 			files = (
 				EBD41E6C1A968D190002BDA1 /* LoginViewController.m in Sources */,
 				EBD41E4C1A968B6F0002BDA1 /* ViewController.m in Sources */,
+				EBD41E721A96913C0002BDA1 /* ChatViewController.m in Sources */,
 				EBD41E491A968B6F0002BDA1 /* AppDelegate.m in Sources */,
 				EBD41E461A968B6F0002BDA1 /* main.m in Sources */,
 			);
