@@ -34,9 +34,8 @@
         if (user) {
             // redirect to chat
             ChatViewController *cvc = [[ChatViewController alloc] init];
-            [self presentViewController:cvc animated:YES completion:nil];
-            
-//            [self performSegueWithIdentifier:@"chatViewSegue" sender:self];
+            UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:cvc];
+            [self presentViewController:nvc animated:YES completion:nil];
         } else {
             NSLog(@"%@", error);
             NSString *errorString = [error userInfo][@"error"];
@@ -56,9 +55,8 @@
         if (succeeded) {
             // redirect to chat
             ChatViewController *cvc = [[ChatViewController alloc] init];
-            [self presentViewController:cvc animated:YES completion:nil];
-            
-//            [self performSegueWithIdentifier:@"chatViewSegue" sender:self];
+            UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:cvc];
+            [self presentViewController:nvc animated:YES completion:nil];
         } else {
             NSLog(@"%@", error);
             NSString *errorString = [error userInfo][@"error"];

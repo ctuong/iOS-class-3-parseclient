@@ -7,6 +7,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController">
             <connections>
                 <outlet property="messageField" destination="1OU-qs-xdl" id="ZIv-GI-mmj"/>
+                <outlet property="sendButton" destination="T6L-As-IDZ" id="vN8-w0-THN"/>
+                <outlet property="tableView" destination="E4C-dF-e98" id="7GS-d0-MXL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,15 +18,15 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1OU-qs-xdl">
-                    <rect key="frame" x="8" y="369" width="260" height="30"/>
+                    <rect key="frame" x="8" y="8" width="260" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6L-As-IDZ">
-                    <rect key="frame" x="276" y="369" width="36" height="30"/>
+                    <rect key="frame" x="276" y="8" width="36" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="36" id="Nlg-Jd-PZ9"/>
-                        <constraint firstAttribute="height" constant="30" id="f4H-Vv-r49"/>
+                        <constraint firstAttribute="height" constant="30" id="4XS-04-hnP"/>
+                        <constraint firstAttribute="width" constant="36" id="YLT-uc-1Cc"/>
                     </constraints>
                     <state key="normal" title="Send">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -33,14 +35,22 @@
                         <action selector="onSendButton:" destination="-1" eventType="touchUpInside" id="1TB-hV-aUR"/>
                     </connections>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="E4C-dF-e98">
+                    <rect key="frame" x="0.0" y="46" width="320" height="522"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="T6L-As-IDZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="369" id="4T7-uc-Src"/>
-                <constraint firstItem="T6L-As-IDZ" firstAttribute="leading" secondItem="1OU-qs-xdl" secondAttribute="trailing" constant="8" id="6WS-ff-GCF"/>
-                <constraint firstItem="1OU-qs-xdl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="369" id="EKK-vJ-f2N"/>
-                <constraint firstAttribute="trailing" secondItem="T6L-As-IDZ" secondAttribute="trailing" constant="8" id="eP1-Bv-GAR"/>
-                <constraint firstItem="1OU-qs-xdl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="sa0-X1-PCm"/>
+                <constraint firstItem="1OU-qs-xdl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="18B-aG-XUH"/>
+                <constraint firstItem="E4C-dF-e98" firstAttribute="top" secondItem="T6L-As-IDZ" secondAttribute="bottom" constant="8" id="1kq-IM-q67"/>
+                <constraint firstItem="T6L-As-IDZ" firstAttribute="leading" secondItem="1OU-qs-xdl" secondAttribute="trailing" constant="8" id="DU5-3d-FFW"/>
+                <constraint firstItem="1OU-qs-xdl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" placeholder="YES" id="DyZ-Iu-XE7"/>
+                <constraint firstAttribute="trailing" secondItem="E4C-dF-e98" secondAttribute="trailing" id="N1G-JT-tFz"/>
+                <constraint firstAttribute="bottom" secondItem="E4C-dF-e98" secondAttribute="bottom" id="SaE-na-Z3J"/>
+                <constraint firstItem="T6L-As-IDZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" placeholder="YES" id="ada-Ge-iLY"/>
+                <constraint firstAttribute="trailing" secondItem="T6L-As-IDZ" secondAttribute="trailing" constant="8" id="iyf-Bi-XaX"/>
+                <constraint firstItem="E4C-dF-e98" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tss-c3-No1"/>
             </constraints>
             <point key="canvasLocation" x="433" y="376"/>
         </view>
